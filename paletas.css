@@ -60,10 +60,23 @@ p {
     position: fixed;
     top: 0;
     width: 100%;
+    height: 160px; /* Aumentado de 150px para acomodar o logo maior */
     background: linear-gradient(135deg, #1D3557 0%, #1D3557 50%);
     z-index: 1000;
     transition: all 0.3s ease;
     box-shadow: 0 2px 10px rgba(29, 53, 87, 0.2);
+}
+
+/* Logo styles */
+.nav-brand .logo {
+    height: 250px; /* Aumentado de 150px para um logo maior */
+    width: auto;
+    margin-top: -20%;
+    margin-left: -15%;
+    max-width: 300px; /* Aumentado de 280px */
+    object-fit: contain;
+    transition: all 0.3s ease;
+    filter: brightness(1.1) drop-shadow(0 2px 4px rgba(0,0,0,0.1));
 }
 
 .navbar {
@@ -83,15 +96,7 @@ p {
     font-weight: 800;
 }
 
-/* Logo styles */
-.nav-brand .logo {
-    height: 80px;
-    width: auto;
-    max-width: 280px;
-    object-fit: contain;
-    transition: all 0.3s ease;
-    filter: brightness(1.1) drop-shadow(0 2px 4px rgba(0,0,0,0.1));
-}
+
 
 .nav-brand .logo:hover {
     transform: scale(1.05);
@@ -215,7 +220,7 @@ p {
 
 /* Hero Section */
 .hero-paletas {
-    height: 100vh;
+    height: 70vh;
     background: linear-gradient(rgba(29, 53, 87, 0.7), rgba(29, 53, 87, 0.7)),
                 url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23F5F5F5" width="1200" height="800"/><path fill="%23F4A261" opacity="0.1" d="M0,400 Q300,200 600,400 T1200,400 V800 H0 Z"/></svg>');
     background-size: cover;
@@ -229,8 +234,8 @@ p {
 }
 
 .hero-paletas h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 3.1rem;
+    margin-bottom: 0.8rem;
     animation: fadeInUp 1s ease;
     color: white !important; /* Força a cor branca */
 }
